@@ -1,0 +1,21 @@
+write:
+  - locator: //*[@text="必填"]
+    action: sendkeys
+    word: jojo
+
+  - locator: //*[@text="手机号"]
+    action: sendkeys
+    word: 13222222222
+
+  - locator: //*[@resource-id="com.tencent.wework:id/av2"]
+    action: find_click
+
+  - locator: //*[@resource-id="com.tencent.wework:id/b2x"]
+    action: wait
+
+  - locator: //*[@resource-id="com.tencent.wework:id/b2x"]
+    action: find_click
+
+  - locator: //*[@text="保存"]
+    action: find_click
+

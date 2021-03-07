@@ -1,0 +1,3 @@
+goto_addmenber_page:
+  - locator: "添加成员"
+    action: swip_click
