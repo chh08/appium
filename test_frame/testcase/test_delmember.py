@@ -6,7 +6,7 @@ class TestDleMember:
         self.app = App()
 
     def test_del(self):
-        name = "xiaohong"
+        name = "jojo"
         editpage = self.app.goto_main().goto_maillist_page().goto_search().search_member(name).goto_editmember()
         editpage.del_member()
         editpage.verify_ok()

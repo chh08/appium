@@ -20,7 +20,6 @@ class BasePage:
     # 次数上限
     _max_num = 3
     _error_num = 0
-    _list = [(MobileBy.ID, 'com.tencent.wework:id/bid')]
 
     def __init__(self, driver: WebDriver):
         self.driver = driver

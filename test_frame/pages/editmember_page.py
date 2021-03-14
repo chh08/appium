@@ -1,3 +1,5 @@
+from selenium.webdriver.common.by import By
+
 from test_frame.pages.basepage import BasePage
 
 
@@ -9,10 +11,9 @@ class EditMember(BasePage):
 
     def verify_ok(self):
         # 验证删除成功
-        for ele in self._list:
-            eles = self.driver.find_elements(*ele)
-            a = len(eles)
-            assert a == 0
+        ele = self.driver.find_elements(By.XPATH, "//*[@resource-id='com.tencent.wework:id/bid']")
+        a = len(ele)
+        assert a == 0
 
 
 

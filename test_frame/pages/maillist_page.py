@@ -10,7 +10,3 @@ class MaillistPage(BasePage):
         self.parse_action("../pages/maillist_page.yaml", "goto_search")
         # 复用driver
         return SearchPage(self.driver)
-
-
-
-
