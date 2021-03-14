@@ -1,0 +1,13 @@
+del_member:
+  - by: xpath
+    locator: //*[@text='删除成员']
+    action: find_click
+
+  - by: xpath
+    locator: //*[@text='确定']
+    action: wait
+
+verify_ok:
+  - by: xpath
+    locator: //*[@resource-id='com.tencent.wework:id/dh2']/..//*[@resource-id='com.tencent.wework:id/bid']
+    action: find

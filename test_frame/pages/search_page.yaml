@@ -1,0 +1,9 @@
+search_member:
+  - by: xpath
+    locator: //*[@resource-id='com.tencent.wework:id/fk1']
+    action: find_sendkeys
+    word: ${name}
+
+  - by: xpath
+    locator: //*[@resource-id='com.tencent.wework:id/dh2']/..//*[@resource-id='com.tencent.wework:id/bid']
+    action: find_click
